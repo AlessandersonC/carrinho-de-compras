@@ -1,6 +1,5 @@
 let valorFinal = 0
-document.getElementById('lista-produtos').innerHTML = '';
-document.getElementById('valor-total').innerHTML = '';
+limpar();
 
 function adicionar() {
     // recuperar valores: nomedo produto, quantidade e valor
@@ -23,5 +22,8 @@ function adicionar() {
 }
 
 function limpar() {
+    valorFinal = 0
+    document.getElementById('lista-produtos').innerHTML = '';
+    document.getElementById('valor-total').innerHTML = '';
 
 }
